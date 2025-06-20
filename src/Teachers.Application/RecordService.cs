@@ -1,8 +1,10 @@
+using Teachers.Repositories;
+
 namespace Teachers.Application;
 
 public class RecordService : IRecordService
 {
-        private readonly RecordRepository _repository;
+        private readonly IRecordRepository _repository;
 
         public RecordService(RecordRepository repository)
         {
